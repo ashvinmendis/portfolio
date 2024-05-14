@@ -35,12 +35,6 @@
         background-color: rgb(0, 0, 0);
         border-radius: 30px;
       }
-      .caro1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-      }
     </style>
   </head>
 
@@ -248,29 +242,29 @@
               <div class="d-flex justify-content-center">
                 <img
                   src="../../img/portfolio/petfeeder/G1.png"
-                  class="d-block w-90"
-                  style="border: 1px solid black"
+                  class="d-block"
+                  style="border: 1px solid black; width: 100%"
                   alt="..."
                 />
                 <!-- <div class="carousel-caption d-none d-md-block">
-                              <h5>First slide label</h5>
-                              <p>Some representative placeholder content for the first slide.</p>
-                          </div> -->
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div> -->
               </div>
             </div>
-            <div class="carousel-item caro">
+            <div class="carousel-item">
               <div class="d-flex justify-content-center">
                 <img src="../../img/portfolio/petfeeder/G2.png" class="d-block" style="width: 100%" alt="..." />
               </div>
             </div>
-            <div class="carousel-item caro">
+            <div class="carousel-item">
               <div class="d-flex justify-content-center">
-                <img src="../../img/portfolio/petfeeder/G3.png" class="d-block w-90" alt="..." />
+                <img src="../../img/portfolio/petfeeder/G3.png" class="d-block" style="width: 100%" alt="..." />
               </div>
             </div>
-            <div class="carousel-item caro">
+            <div class="carousel-item">
               <div class="d-flex justify-content-center">
-                <img src="../../img/portfolio/petfeeder/G4.png" class="d-block w-80" alt="..." />
+                <img src="../../img/portfolio/petfeeder/G4.png" class="d-block" style="width: 100%" alt="..." />
               </div>
             </div>
             <div class="carousel-item caro">
@@ -333,11 +327,23 @@
                 <img src="../../img/portfolio/petfeeder/F1.jpg" class="d-block" style="width: 90%" alt="..." />
               </div>
             </div>
+
             <div class="carousel-item">
               <div class="d-flex justify-content-center">
-                <video style="width: 100%" autoplay muted loop>
-                  <source src="../../img/portfolio/petfeeder/robort2.mp4" type="video/mp4" />
+                <video
+                  autoplay
+                  muted
+                  loop
+                  style="width: 100%"
+                  controls="controls"
+                  preload="none"
+                  onclick="this.play();arguments[0].preventDefault();"
+                >
+                  <source type="video/mp4" src="../../img/portfolio/petfeeder/robort2.mp4" />
                 </video>
+                <!-- <video style="width: 100%" autoplay muted loop>
+                  <source src="../../img/portfolio/petfeeder/robort2.mp4" type="video/mp4" />
+                </video> -->
               </div>
             </div>
             <div class="carousel-item">
@@ -349,20 +355,24 @@
             </div>
           </div>
 
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide="prev"
-          >
-            <img src="../../img/SVG/back.svg" class="svg" style="transform: rotate(180deg)" />
-            <span class="visually-hidden">Previous</span>
-          </button>
+          <div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev"
+              style="margin: 100px 0px"
+            >
+              <img src="../../img/SVG/back.svg" class="svg" style="transform: rotate(180deg)" />
+              <span class="visually-hidden">Previous</span>
+            </button>
+          </div>
           <button
             class="carousel-control-next"
             type="button"
             data-bs-target="#carouselExampleDark"
             data-bs-slide="next"
+            style="margin: 100px 0px"
           >
             <img src="../../img/SVG/back.svg" class="svg" alt="" />
             <span class="visually-hidden">Next</span>
